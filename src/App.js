@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
-import Login from "./Login/Login"
+import React, { Component } from 'react'
+import Inventory from './Inventory/Inventory'
+import Navbar from './NavBar'
 
 class App extends Component {
   render() {
     return (
-      <div className="bg">
-        <Login />
+      <div>
+          <Navbar />
+          <Inventory />
       </div>
     );
   }

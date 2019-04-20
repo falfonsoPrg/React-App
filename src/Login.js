@@ -41,7 +41,7 @@ class Login extends Component{
     }
 
     expiredCallback(response){
-        console.log("alerta")
+        console.log("alert")
         if(response){
             this.setState({
                 captchaVerified: false
