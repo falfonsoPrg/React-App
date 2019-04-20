@@ -1,5 +1,5 @@
 import React from "react"
-import {MDBBtn} from "mdbreact"
+import {MDBBtn,MDBIcon} from "mdbreact"
 
 const data = {
       columns: [
@@ -40,8 +40,12 @@ const data = {
           width: 100
         },
         {
-          label: 'State',
-          field: 'Edit'
+          label: 'Confirm',
+          field: 'Confirm'
+        },
+        {
+          label: 'Cancel',
+          field: 'Cancel'
         }
       ],
       rows: [
@@ -52,7 +56,8 @@ const data = {
           age: '61',
           date: '2011/04/25',
           salary: '$320',
-          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
+          Confirm: <MDBBtn color="indigo" size="sm"><MDBIcon icon="check" /></MDBBtn>
+          ,Cancel: <MDBBtn color="indigo" size="sm"><MDBIcon icon="ban" /></MDBBtn>
         },
         {
           name: 'Garrett Winters',
@@ -61,7 +66,8 @@ const data = {
           age: '63',
           date: '2011/07/25',
           salary: '$170',
-          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
+          Confirm: <MDBBtn color="indigo" size="sm"><MDBIcon icon="check" /></MDBBtn>
+          ,Cancel: <MDBBtn color="indigo" size="sm"><MDBIcon icon="ban" /></MDBBtn>
         },
         {
           name: 'Ashton Cox',
@@ -70,7 +76,8 @@ const data = {
           age: '66',
           date: '2009/01/12',
           salary: '$86',
-          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
+          Confirm: <MDBBtn color="indigo" size="sm"><MDBIcon icon="check" /></MDBBtn>
+          ,Cancel: <MDBBtn color="indigo" size="sm"><MDBIcon icon="ban" /></MDBBtn>
         },
         {
           name: 'Cedric Kelly',
@@ -79,7 +86,8 @@ const data = {
           age: '22',
           date: '2012/03/29',
           salary: '$433',
-          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
+          Confirm: <MDBBtn color="indigo" size="sm"><MDBIcon icon="check" /></MDBBtn>
+          ,Cancel: <MDBBtn color="indigo" size="sm"><MDBIcon icon="ban" /></MDBBtn>
         },
         {
           name: 'Airi Satou',
@@ -88,7 +96,8 @@ const data = {
           age: '33',
           date: '2008/11/28',
           salary: '$162',
-          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
+          Confirm: <MDBBtn color="indigo" size="sm"><MDBIcon icon="check" /></MDBBtn>
+          ,Cancel: <MDBBtn color="indigo" size="sm"><MDBIcon icon="ban" /></MDBBtn>
         },
         {
           name: 'Brielle Williamson',
@@ -97,7 +106,8 @@ const data = {
           age: '61',
           date: '2012/12/02',
           salary: '$372',
-          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
+          Confirm: <MDBBtn color="indigo" size="sm"><MDBIcon icon="check" /></MDBBtn>
+          ,Cancel: <MDBBtn color="indigo" size="sm"><MDBIcon icon="ban" /></MDBBtn>
         },
         {
           name: 'Herrod Chandler',
@@ -106,7 +116,8 @@ const data = {
           age: '59',
           date: '2012/08/06',
           salary: '$137',
-          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
+          Confirm: <MDBBtn color="indigo" size="sm"><MDBIcon icon="check" /></MDBBtn>
+          ,Cancel: <MDBBtn color="indigo" size="sm"><MDBIcon icon="ban" /></MDBBtn>
         },
         {
           name: 'Rhona Davidson',
@@ -115,7 +126,8 @@ const data = {
           age: '55',
           date: '2010/10/14',
           salary: '$327',
-          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
+          Confirm: <MDBBtn color="indigo" size="sm"><MDBIcon icon="check" /></MDBBtn>
+          ,Cancel: <MDBBtn color="indigo" size="sm"><MDBIcon icon="ban" /></MDBBtn>
         },
         {
           name: 'Colleen Hurst',
@@ -124,7 +136,8 @@ const data = {
           age: '39',
           date: '2009/09/15',
           salary: '$205',
-          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
+          Confirm: <MDBBtn color="indigo" size="sm"><MDBIcon icon="check" /></MDBBtn>
+          ,Cancel: <MDBBtn color="indigo" size="sm"><MDBIcon icon="ban" /></MDBBtn>
         },
         {
           name: 'Colleen Hurst',
@@ -133,7 +146,8 @@ const data = {
           age: '39',
           date: '2009/09/15',
           salary: '$205',
-          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
+          Confirm: <MDBBtn color="indigo" size="sm"><MDBIcon icon="check" /></MDBBtn>
+          ,Cancel: <MDBBtn color="indigo" size="sm"><MDBIcon icon="ban" /></MDBBtn>
         },
         {
           name: 'Colleen Hurst',
@@ -142,7 +156,8 @@ const data = {
           age: '39',
           date: '2009/09/15',
           salary: '$205',
-          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
+          Confirm: <MDBBtn color="indigo" size="sm"><MDBIcon icon="check" /></MDBBtn>
+          ,Cancel: <MDBBtn color="indigo" size="sm"><MDBIcon icon="ban" /></MDBBtn>
         }
     ]}
   
