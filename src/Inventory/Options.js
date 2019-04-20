@@ -1,6 +1,5 @@
 import React from 'react'
-import { MDBBtn, MDBRow, MDBCol } from "mdbreact";
-import Modal from './Modal'
+import { MDBBtn, MDBRow, MDBCol, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from "mdbreact";
 
 function SelectPage() {
     return(
@@ -14,14 +13,30 @@ function SelectPage() {
     )
 }
 
-function Options() {
+function DropdownPage (props) {
+  return (
+    <MDBDropdown>
+      <MDBDropdownToggle caret color="indigo">
+        {props.name}
+      </MDBDropdownToggle>
+      <MDBDropdownMenu basic>
+        <MDBDropdownItem onClick={props.handleAppChange} name={props.opciones.first}>{props.opciones.first}</MDBDropdownItem>
+        <MDBDropdownItem onClick={props.handleAppChange} name={props.opciones.second}>{props.opciones.second}</MDBDropdownItem>
+        <MDBDropdownItem onClick={props.handleAppChange} name={props.opciones.third}>{props.opciones.third}</MDBDropdownItem>
+      </MDBDropdownMenu>
+    </MDBDropdown>
+  )
+}
+
+
+function Options(props) {
     return(
         <div>
-                <br />
+              <br />
                 <MDBRow>
                     <MDBCol><SelectPage /></MDBCol>
-                    <Modal color="indigo" name="Elementos" options={{ first:"Agregar", second:"Eliminar", third:"Modificar" }} app={ {first: <Options />} }/>
-                    <Modal color="indigo" name="Registrar Movimientos" options={{ first:"Entrada", second:"Salida", third:"Translado" }}/>
+                    <DropdownPage color="indigo" name="Elementos" opciones={{ first:"Agregar", second:"Eliminar", third:"Modificar" }} handleAppChange={props.handleAppChange}/>
+                    <DropdownPage color="indigo" name="Registrar Movimientos" opciones={{ first:"Entrada", second:"Salida", third:"Translado" }} handleAppChange={props.handleAppChange}/>
                 </MDBRow>
         </div>
     )
