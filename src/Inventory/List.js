@@ -1,9 +1,10 @@
 import React from 'react'
-import { MDBDataTable} from 'mdbreact'
+import { MDBDataTable } from 'mdbreact'
 import data from './data-example.js'
 
 function List() {
     return(
+        <div>
         <MDBDataTable
             striped
             bordered
@@ -11,6 +12,7 @@ function List() {
             small
             data={data}
         />
+        </div>
     )
 }
 

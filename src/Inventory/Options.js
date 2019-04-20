@@ -8,7 +8,7 @@ function SelectPage() {
           <option>Escoja la Bodega</option>
           <option value="1">Bodega 1</option>
         </select>
-        <MDBBtn color="indigo">Cambiar Bodega</MDBBtn>
+          <MDBBtn color="indigo">Cambiar Bodega</MDBBtn>
       </div>
     )
 }
@@ -22,7 +22,6 @@ function DropdownPage (props) {
       <MDBDropdownMenu basic>
         <MDBDropdownItem onClick={props.handleAppChange} name={props.opciones.first}>{props.opciones.first}</MDBDropdownItem>
         <MDBDropdownItem onClick={props.handleAppChange} name={props.opciones.second}>{props.opciones.second}</MDBDropdownItem>
-        <MDBDropdownItem onClick={props.handleAppChange} name={props.opciones.third}>{props.opciones.third}</MDBDropdownItem>
       </MDBDropdownMenu>
     </MDBDropdown>
   )
@@ -35,8 +34,8 @@ function Options(props) {
               <br />
                 <MDBRow>
                     <MDBCol><SelectPage /></MDBCol>
-                    <DropdownPage color="indigo" name="Elementos" opciones={{ first:"Agregar", second:"Eliminar", third:"Modificar" }} handleAppChange={props.handleAppChange}/>
-                    <DropdownPage color="indigo" name="Registrar Movimientos" opciones={{ first:"Entrada", second:"Salida", third:"Translado" }} handleAppChange={props.handleAppChange}/>
+                    <DropdownPage name="Suministros" opciones={{ first:"Agregar", second:"Lista"}} handleAppChange={props.handleAppChange}/>
+                    <DropdownPage name="Registrar Movimientos" opciones={{ first:"Movimiento", second:"Translado"}} handleAppChange={props.handleAppChange}/>
                 </MDBRow>
         </div>
     )

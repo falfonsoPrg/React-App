@@ -1,5 +1,5 @@
 import React from "react"
-import {MDBBtn, MDBContainer, MDBRow, MDBCol,MDBInput,MDBModal,MDBModalBody,MDBModalFooter,MDBModalHeader,MDBSelectOption} from "mdbreact"
+import {MDBBtn, MDBContainer, MDBRow, MDBCol,MDBInput,MDBModal,MDBModalBody,MDBModalFooter,MDBModalHeader} from "mdbreact"
 import List from "../Inventory/List"
 
 class Production extends React.Component{

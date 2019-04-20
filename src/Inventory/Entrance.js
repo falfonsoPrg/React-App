@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Entrada() {
+function Entrance() {
     return(
         <div>
 
@@ -8,4 +8,4 @@ function Entrada() {
     )
 }
 
-export default Entrada
+export default Entrance
