@@ -1,3 +1,6 @@
+import React from "react"
+import {MDBBtn} from "mdbreact"
+
 const data = {
       columns: [
         {
@@ -35,6 +38,10 @@ const data = {
           field: 'salary',
           sort: 'asc',
           width: 100
+        },
+        {
+          label: 'State',
+          field: 'Edit'
         }
       ],
       rows: [
@@ -44,7 +51,8 @@ const data = {
           office: 'Edinburgh',
           age: '61',
           date: '2011/04/25',
-          salary: '$320'
+          salary: '$320',
+          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
         },
         {
           name: 'Garrett Winters',
@@ -52,7 +60,8 @@ const data = {
           office: 'Tokyo',
           age: '63',
           date: '2011/07/25',
-          salary: '$170'
+          salary: '$170',
+          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
         },
         {
           name: 'Ashton Cox',
@@ -60,7 +69,8 @@ const data = {
           office: 'San Francisco',
           age: '66',
           date: '2009/01/12',
-          salary: '$86'
+          salary: '$86',
+          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
         },
         {
           name: 'Cedric Kelly',
@@ -68,7 +78,8 @@ const data = {
           office: 'Edinburgh',
           age: '22',
           date: '2012/03/29',
-          salary: '$433'
+          salary: '$433',
+          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
         },
         {
           name: 'Airi Satou',
@@ -76,7 +87,8 @@ const data = {
           office: 'Tokyo',
           age: '33',
           date: '2008/11/28',
-          salary: '$162'
+          salary: '$162',
+          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
         },
         {
           name: 'Brielle Williamson',
@@ -84,7 +96,8 @@ const data = {
           office: 'New York',
           age: '61',
           date: '2012/12/02',
-          salary: '$372'
+          salary: '$372',
+          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
         },
         {
           name: 'Herrod Chandler',
@@ -92,7 +105,8 @@ const data = {
           office: 'San Francisco',
           age: '59',
           date: '2012/08/06',
-          salary: '$137'
+          salary: '$137',
+          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
         },
         {
           name: 'Rhona Davidson',
@@ -100,7 +114,8 @@ const data = {
           office: 'Tokyo',
           age: '55',
           date: '2010/10/14',
-          salary: '$327'
+          salary: '$327',
+          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
         },
         {
           name: 'Colleen Hurst',
@@ -108,7 +123,8 @@ const data = {
           office: 'San Francisco',
           age: '39',
           date: '2009/09/15',
-          salary: '$205'
+          salary: '$205',
+          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
         },
         {
           name: 'Colleen Hurst',
@@ -116,7 +132,8 @@ const data = {
           office: 'San Francisco',
           age: '39',
           date: '2009/09/15',
-          salary: '$205'
+          salary: '$205',
+          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
         },
         {
           name: 'Colleen Hurst',
@@ -124,7 +141,8 @@ const data = {
           office: 'San Francisco',
           age: '39',
           date: '2009/09/15',
-          salary: '$205'
+          salary: '$205',
+          Edit: <MDBBtn color="indigo" size="sm">Confirmar orden</MDBBtn>
         }
     ]}
   
