@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import Options from './Options'
 import List from './List'
-import Agregar from './Agregar'
-import Entrada from './Entrada'
+import Add from './Add'
+import Entrance from './Entrance'
 import { MDBContainer } from 'mdbreact'
+import ListSupply from './ListSupply'
+import Movement from './Movement'
 
 
 class Inventory extends Component {
@@ -16,8 +18,10 @@ class Inventory extends Component {
 
     handleAppChange = (event) => {
         const {name} = event.target
-        if(name === 'Agregar') {this.setState({app: <Agregar /> })}
-        else if(name === 'Entrada') {this.setState({app: <Entrada />})}
+        if(name === 'Agregar') {this.setState({app: <Add /> })}
+        else if(name === 'Lista') {this.setState({app: <ListSupply />})}
+        else if(name === 'Movimiento') {this.setState({app: <Movement />})}
+        else if(name === 'Translado') {this.setState({app: <Entrance />})}
         else {this.setState({app: <List /> })}
     }
 
