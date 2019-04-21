@@ -7,7 +7,8 @@ class FullPageIntroWithFixedNavbar extends React.Component {
     super(props);
     this.state = {
       collapse: false,
-      isWideEnough: false
+      isWideEnough: false,
+      InvDisabled: localStorage.getItem('user') ? "disabled":""
     };
     this.onClick = this.onClick.bind(this);
   }
@@ -31,7 +32,8 @@ class FullPageIntroWithFixedNavbar extends React.Component {
               <MDBNavbarToggler onClick={this.onClick} />
                 <MDBCollapse isOpen={this.state.collapse} navbar>
                   <MDBNavbarNav left>
-                    <MDBNavItem active>
+                  {console.log(this.state.InvDisabled)}
+                    <MDBNavItem className={this.state.InvDisabled}>
                       <MDBNavLink to="#">Inventario</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem>

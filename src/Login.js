@@ -17,11 +17,13 @@ class Login extends Component{
     handleCaptchaVerified(){
         return () => {
             if(this.state.captchaVerified){
-                return toast.success('Login Succesfull', {
+                localStorage.setItem('user','user')
+                localStorage.setItem('rol','rol')
+                return toast.success('Bienvenido '+localStorage.getItem('user'), {
                     position: "top-right",
                 });
             }else{
-                return toast.error('Error while login', {
+                return toast.error('Error en el login', {
                     position: "top-right",
                 });
             }
@@ -29,7 +31,7 @@ class Login extends Component{
     };
 
     callback = function () {
-        console.log('Done!!!!');
+        console.log('Captcha Done!!!!');
     };
 
     verifyCallback(response){
