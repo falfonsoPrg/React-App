@@ -48,7 +48,6 @@ class Production extends React.Component{
                             </select>
                         </div>
                         <MDBInput label="Cantidad del insumo" />
-                        <a href="#">Agregar mas insumos</a>
                         </MDBModalBody>
                         <MDBModalFooter>
                             <MDBBtn color="secondary" onClick={this.toggle}>Cancelar</MDBBtn>

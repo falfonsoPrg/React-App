@@ -19,6 +19,12 @@ class FullPageIntroWithFixedNavbar extends React.Component {
     });
   }
 
+  handleLogout() {
+    localStorage.removeItem('user')
+    localStorage.removeItem('rol')
+    this.props.handleAppChange('Login')
+  }
+
   render() {
     return (
       <div>
@@ -32,12 +38,14 @@ class FullPageIntroWithFixedNavbar extends React.Component {
               <MDBNavbarToggler onClick={this.onClick} />
                 <MDBCollapse isOpen={this.state.collapse} navbar>
                   <MDBNavbarNav left>
-                  {console.log(this.state.InvDisabled)}
-                    <MDBNavItem className={this.state.InvDisabled}>
-                      <MDBNavLink to="#">Inventario</MDBNavLink>
+                    <MDBNavItem>
+                      <MDBNavLink to="#" onClick={() => this.props.handleAppChange('Inventory')}>Inventario</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem>
-                      <MDBNavLink to="#">Produccion</MDBNavLink>
+                      <MDBNavLink to="#" onClick={() => this.props.handleAppChange('Production')}>Produccion</MDBNavLink>
+                    </MDBNavItem>
+                    <MDBNavItem>
+                      <MDBNavLink to="#" onClick={this.handleLogout}>Log out</MDBNavLink>
                     </MDBNavItem>
                   </MDBNavbarNav>
                 </MDBCollapse>

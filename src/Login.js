@@ -10,7 +10,7 @@ class Login extends Component{
         this.expiredCallback = this.expiredCallback.bind(this)
         
         this.state = {
-            captchaVerified: false
+            captchaVerified: true
         }
     }
 
@@ -19,9 +19,7 @@ class Login extends Component{
             if(this.state.captchaVerified){
                 localStorage.setItem('user','user')
                 localStorage.setItem('rol','rol')
-                return toast.success('Bienvenido '+localStorage.getItem('user'), {
-                    position: "top-right",
-                });
+                this.props.handleAppChange(this.props.name)
             }else{
                 return toast.error('Error en el login', {
                     position: "top-right",

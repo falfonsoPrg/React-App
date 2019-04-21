@@ -4,11 +4,14 @@ import data from './data-example.js'
 import ModalModify from './ModalModify'
 
 function ListSupply() {
+    
+    var aux = []
     AddModifyButtom()
     function AddModifyButtom () {
-        data.columns[9] = {label: "Modificar", field:"modify"}
-        for (var i in data.rows) {
-              data.rows[i]['modify'] = <ModalModify />
+        aux = data
+        aux.columns[9] = {label: "Modificar", field:"modify"}
+        for (var i in aux.rows) {
+            aux.rows[i]['modify'] = <ModalModify />
         }
     }
 
@@ -19,7 +22,7 @@ function ListSupply() {
             bordered
             hover 
             small
-            data={data}
+            data={aux}
         />
         </div>
     )

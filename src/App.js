@@ -3,25 +3,27 @@ import Inventory from './Inventory/Inventory'
 import Navbar from './NavBar'
 import Production from "./Production/Production"
 import Login from "./Login"
+import Start from './Start'
 
 class App extends Component {
   constructor (props){
     super(props)
     this.state={
-      app: <Login />
+      app: !localStorage.getItem('user') ? <Login handleAppChange={this.handleAppChange} name='Start'/> : <Start />
     }
   }
 
-  handleAppChange = (event) =>{
-    const {name} = event.target
-    if(name==="Login" && !localStorage.getItem('user')) this.setState({app: <Login />})
+  handleAppChange = (name) => {
+    if(name==='Start') this.setState({app: <Start />})
     else if(name==="Production")this.setState({app: <Production />})
     else if(name==="Inventory")this.setState({app: <Inventory />})
+    else if(name==="Login" && !localStorage.getItem('user')) this.setState({app: <Login handleAppChange={this.handleAppChange} name='Start' />})
   }
 
   render() {
     return (
       <div>
+          {localStorage.getItem('user') ? <Navbar handleAppChange={this.handleAppChange}/> : ''}
           {this.state.app}
       </div>
     );
